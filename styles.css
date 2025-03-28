@@ -75,22 +75,25 @@ li {
 .task-content {
     flex-grow: 1;
     display: inline-block;
+    margin-right: 2.5rem;
 }
 
 /* Strike-through effect for completed tasks */
 .task-content.strike-through {
     text-decoration: line-through;
+    color: #878787;
 }
 
 /* Circular Checkbox */
 .checkbox {
-    width: 20px;
-    height: 20px;
-    border: 2px solid #007bff;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #007bff;
     border-radius: 50%;
     display: inline-block;
-    margin-right: 1rem;
+    margin-right: 1.5rem;
     cursor: pointer;
+    vertical-align: middle;
 }
 
 .checkbox.checked {
@@ -125,6 +128,22 @@ li {
     color: #777;
 }
 
+#todoList {
+    display: block; 
+    width: 100%;
+}
+
+
+#todoList li {
+    display: flex; 
+    width: 100%;  
+    font-size: 1.1rem;
+    justify-content: space-between;
+}
+
+.fas {
+    margin-right: 0.5rem;
+}
 /* Responsive Design */
 @media (max-width: 600px) {
     .input {
